@@ -40,17 +40,20 @@ alias gdi='git diff --internal-diff'
 alias gdfm='gdf mirror/$( git rev-parse --abbrev-ref HEAD )'
 alias gdkm='gdk mirror/$( git rev-parse --abbrev-ref HEAD )'
 
-gd1c() { git diff ${1}^..$1 ; }
-gdf1c() { gdf ${1}^..$1 ; }
-gdk1c() { gdk ${1}^..$1 ; }
 
-
-alias gd='git difftool -t tkdiff'
+alias gd='git diff'
+alias gdt='git difftool -t tkdiff'
 alias gdg='git difftool -t gvimdiff'
 alias gdh='git difftool -t tkdiff HEAD'
 alias gdk='git difftool -t kdiff3'
-alias gdt='git diff-tree -r --name-only'
 alias gdv='git difftool -t vimdiff'
+alias gdtree='git diff-tree -r --name-only'
+
+gd1c() { git diff ${1}^..$1 ; }
+gdf1c() { gdf ${1}^..$1 ; }
+gdk1c() { gdk ${1}^..$1 ; }
+gdt1c() { gdt ${1}^..$1 ; }
+
 
 alias gV='git checkout --'
 alias gVa='git reset HEAD'
