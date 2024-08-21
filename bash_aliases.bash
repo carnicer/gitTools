@@ -22,5 +22,5 @@ alias egrep='egrep --color=auto'
 # VIM
 
 alias vx='vim -X'
-alias vxw='view -X'
+alias vxw='vim -X -R'
 
