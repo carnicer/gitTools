@@ -1,8 +1,11 @@
 # GIT
+# my official ones
 
-# git config --global --add alias.loc "log --graph --decorate --pretty=oneline --abbrev-commit"
-# git config --global --add alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
-# git config --global --add alias.low 'log --graph --all --format="%h | %<(21,trunc)%ai | %<(25,trunc)%s"'
+# git config --global --add alias.lo "log --graph --decorate --pretty=oneline --abbrev-commit"
+# git config --global --add alias.lol "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+# git config --global --add alias.loc 'log --graph --format="%h | %<(21,trunc)%ai | %<(25,trunc)%s"'
+# git config --global --add alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+
 
 # by Olivier Lacan
 
@@ -68,13 +71,28 @@ alias gpd='git push --delete'
 alias gpdm='git push --delete mirror $( git rev-parse --abbrev-ref HEAD )'
 alias gphm='git push mirror HEAD'
 
-alias gl='git lol'
 alias gh='git hist'
+alias gha='git hist --all'
+alias gh3='git hist -3'
+alias gh9='git hist -9'
+alias gha3='git hist --all -3'
+alias gha9='git hist --all -9'
+
+alias gc='git loc'
+alias gca='git loc --all'
+alias gc3='git loc -3'
+alias gc9='git loc -9'
+alias gca3='git loc --all -3'
+alias gca9='git loc --all -9'
+
+alias gl='git lol'
 alias gl1='git lol -1'
+alias gl3='git lol -3'
 alias gl9='git lol -9'
 alias gll='git lol -22'
-alias glc='git loc'
-alias glw='git low'
+alias gla='git lol --all'
+alias g3='git lol --all -3'
+alias g9='git lol --all -9'
 
 alias gmm='git commit -m'
 alias gma='git commit --amend'
