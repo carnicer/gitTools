@@ -1,10 +1,10 @@
 # GIT
 # my official ones
 
-# git config --global --add alias.lo "log --graph --decorate --pretty=oneline --abbrev-commit"
+# git config --global --add alias.lo "log --graph --decorate --decorate-refs-exclude=refs/remotes --pretty=oneline --abbrev-commit"
 # git config --global --add alias.lol "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-# git config --global --add alias.loc 'log --graph --format="%h | %<(21,trunc)%ai | %<(25,trunc)%s"'
-# git config --global --add alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+# git config --global --add alias.loc 'log --graph --decorate-refs-exclude=refs/remotes --format="%h | %<(21,trunc)%ai | %<(21,trunc)%s | %<(27,trunc)%D"'
+# git config --global --add alias.hist "log --decorate-refs-exclude=refs/remotes --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
 
 
 # by Olivier Lacan
