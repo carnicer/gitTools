@@ -38,6 +38,7 @@ alias gdf='git diff --name-status'
 alias gdi='git diff --internal-diff'
 
 alias gdfm='gdf mirror/$( git rev-parse --abbrev-ref HEAD )'
+alias gdtm='gdt mirror/$( git rev-parse --abbrev-ref HEAD )'
 alias gdkm='gdk mirror/$( git rev-parse --abbrev-ref HEAD )'
 
 
