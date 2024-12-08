@@ -24,3 +24,13 @@ alias egrep='egrep --color=auto'
 alias vx='vim -X'
 alias vxw='vim -X -R'
 
+
+# docker
+
+alias dps='docker ps -a'
+alias ds='docker start'
+alias da='docker attach'
+alias dad='docker attach --detach-keys="ctrl-v"'
+alias dsad='docker start --attach -i --detach-keys="ctrl-v"'
+
+
