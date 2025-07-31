@@ -54,6 +54,7 @@ function gauNh() {
   gu
 }
 
+alias gdm='gd mirror/$( git rev-parse --abbrev-ref HEAD )'
 alias gdfm='gdf mirror/$( git rev-parse --abbrev-ref HEAD )'
 alias gdtm='gdt mirror/$( git rev-parse --abbrev-ref HEAD )'
 alias gdkm='gdk mirror/$( git rev-parse --abbrev-ref HEAD )'
