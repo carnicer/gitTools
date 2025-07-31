@@ -125,7 +125,10 @@ alias griC='git rebase --continue'
 
 alias gur='git update-ref'
 
-alias gbrups='git branch -vv | grep'
+function gbrups() {
+  [ $# -gt 0 ] && BR=$1 || BR=$( git rev-parse --abbrev-ref HEAD )
+  git branch -vv | grep \/${BR}
+}
 
 alias gbrs='git for-each-ref --sort=committerdate --format='\''%(committerdate:short) | %(refname:short)'\'' refs/heads'
 
