@@ -37,6 +37,23 @@ alias gau='git add -u'
 alias gdf='git diff --name-status'
 alias gdi='git diff --internal-diff'
 
+function gauNt() {
+  [ $# -eq 0 ] && N=1 || N=$1
+  FILE=$( gu --short | cut -c 4- | tail -n -${1} | head -1 )
+  echo "add tail's ${N}th file: $FILE ..."
+  echo
+  gau $FILE
+  gu
+}
+function gauNh() {
+  [ $# -eq 0 ] && N=1 || N=$1
+  FILE=$( gu --short | cut -c 4- | head -n ${1} | tail -1 )
+  echo "add head's ${N}th file: $FILE ..."
+  echo
+  gau $FILE
+  gu
+}
+
 alias gdfm='gdf mirror/$( git rev-parse --abbrev-ref HEAD )'
 alias gdtm='gdt mirror/$( git rev-parse --abbrev-ref HEAD )'
 alias gdkm='gdk mirror/$( git rev-parse --abbrev-ref HEAD )'
